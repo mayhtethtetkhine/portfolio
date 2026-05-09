@@ -13,6 +13,12 @@ export default defineConfig({
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      colors: {
+        'primary': '#1ab8b8',
+        'background': '#000000',
+        'text': '#f2f2f2',
+        'muted': '#828280',
+      }
     },
   },
 })

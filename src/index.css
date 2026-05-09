@@ -6,3 +6,12 @@
   font-weight: 400 700;
   font-display: swap;
 }
+
+@theme {
+  --color-primary: #1ab8b8;
+  --color-background: #000000;
+  --color-text: #f2f2f2;
+  --color-muted: #828280;
+
+  --font-montserrat: 'Montserrat';
+}
