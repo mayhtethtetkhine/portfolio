@@ -5,52 +5,80 @@
     "copyright": "© 2026 Romand",
     "footerNote": "Designed & built by ROMAND"
   },
-
   "hero": {
     "heading": [
-      "I'm May. ",
-      "Half data scientist, half engineer."
+      "May Htet Htet Khine. ",
+      "½ data scientist, ½ engineer."
     ],
-    "highlightWords": ["data scientist", "engineer"] ,
+    "highlightWords": [
+      "data scientist",
+      "engineer"
+    ],
     "bio": [
-      "I am currently pursuing a Doctor of Engineering degree, working at the intersection of data science, machine learning, and advanced manufacturing.",
+      "I work on data-driven systems for manufacturing and engineering applications, combining machine learning with practical optimization and experimentation.",
       "My work focuses on building predictive and reliable systems for real-world engineering and industrial optimization problems."
     ]
   },
-
   "skills": {
     "heading": "Tools I know.",
     "headingAccent": "Problems I solve.",
     "subheading": "I work across the full stack, from designing interfaces to building APIs to deploying on the cloud. Here's what I reach for depending on the job.",
     "items": [
       {
-        "title": "Programming Languages",
-        "description": "These are the languages I am most confident with. JavaScript and TypeScript for the web, Python for data and scripting, Java and C# for enterprise systems, and Dart for mobile. I'm comfortable switching between them.",
-        "tags": ["Javascript", "Typescript", "Python", "Java", "C#", "Dart"]
+        "title": "ML & Modeling",
+        "description": "I build predictive and robust machine learning pipelines for engineering and manufacturing applications, with a strong focus on variability, evaluation, and generalization under real-world conditions.",
+        "tags": [
+          "Scikit-learn",
+          "XGBoost",
+          "Random Forest",
+          "Chronos",
+          "TabPFN v2 v2.5",
+          "PyMC",
+          "Optuna",
+          "Pandas",
+          "NumPy"
+        ]
       },
       {
-        "title": "Frontend Development",
-        "description": "I build interfaces that are fast, clean, and easy to use. I work mostly with Vue.js and React depending on the project. I care about details, spacing, transitions, responsiveness, which are the things users notice without knowing why.",
-        "tags": ["Vue.js", "React", "Next.js", "Tailwind CSS", "Bootstrap"]
-      },
-      {
-        "title": "Backend Development",
-        "description": "I design and build APIs and services that are reliable, maintainable, and easy to scale. I've worked with Node.js and Nest.js for JavaScript backends, Django and FastAPI for Python, and Spring Boot for Java. I like systems that are predictable and well-structured.",
-        "tags": ["Node.js", "Nest.js", "Django", "FastAPI", "Spring Boot"]
+        "title": "Data Science",
+        "description": "I work heavily with benchmarking, variance analysis, statistical evaluation, temporal validation, and reproducible experimentation workflows for industrial datasets.",
+        "tags": [
+          "Feature Engineering",
+          "Hyperparameter Optimization",
+          "Monte Carlo Simulation",
+          "Cross Validation",
+          "Statistical Testing",
+          "Data Visualization",
+          "Robust Optimization"
+        ]
       },
       {
         "title": "Databases",
         "description": "I work with both relational and non-relational databases depending on what the project needs. PostgreSQL and MySQL for structured data, MongoDB for flexibility, Redis for caching and queues, and Supabase and Firebase for projects that need a backend fast.",
-        "tags": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Supabase", "Firebase"]
+        "tags": [
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "Supabase",
+          "Firebase"
+        ]
       },
       {
         "title": "DevOps & Tools",
         "description": "I'm comfortable with the full deployment side of things, containerizing with Docker, orchestrating with Kubernetes, setting up CI/CD pipelines, and working with message brokers like Kafka and RabbitMQ. I also build mobile apps with Flutter and handle payments with Stripe.",
-        "tags": ["Docker", "Kubernetes", "Kafka", "RabbitMQ", "Git", "Flutter", "Stripe API"]
+        "tags": [
+          "Docker",
+          "Kubernetes",
+          "Kafka",
+          "RabbitMQ",
+          "Git",
+          "Flutter",
+          "Stripe API"
+        ]
       }
     ]
   },
-
   "work": {
     "heading": "Things I have",
     "headingAccent": "actually built.",
@@ -70,11 +98,26 @@
           "Integrated full-text search with indexing, notifications (Firebase), email (Resend), Google OAuth, real-time chat, and automated tasks with cron jobs.",
           "Optimized performance with Supabase queues, server-side prefetching, and SSR for SEO."
         ],
-        "tags": ["Next.js", "Supabase", "Tailwind", "Stripe", "Firebase"],
+        "tags": [
+          "Next.js",
+          "Supabase",
+          "Tailwind",
+          "Stripe",
+          "Firebase"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/senior-pj-team/peer-tutoring" },
-          { "label": "Demo Video", "href": "https://www.youtube.com/watch?v=eTrGNc-UiCI" },
-          { "label": "Live", "href": "https://peertube-digital.vercel.app/login" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/senior-pj-team/peer-tutoring"
+          },
+          {
+            "label": "Demo Video",
+            "href": "https://www.youtube.com/watch?v=eTrGNc-UiCI"
+          },
+          {
+            "label": "Live",
+            "href": "https://peertube-digital.vercel.app/login"
+          }
         ]
       },
       {
@@ -91,10 +134,22 @@
           "Implemented Google OAuth (Passport.js), video uploads via Cloudinary and Multer, and event streaming with managed Kafka (Confluent Cloud). Used Prisma ORM with MongoDB Atlas.",
           "Deployed frontend on Vercel, backend on Render, Kafka worker on Fly.io."
         ],
-        "tags": ["Vue.js", "Node.js", "MongoDB", "Kafka", "Prisma"],
+        "tags": [
+          "Vue.js",
+          "Node.js",
+          "MongoDB",
+          "Kafka",
+          "Prisma"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon?tab=repositories&q=trideo-learning" },
-          { "label": "Live", "href": "https://trideo.vercel.app/" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/NyiWaiYanHtoon?tab=repositories&q=trideo-learning"
+          },
+          {
+            "label": "Live",
+            "href": "https://trideo.vercel.app/"
+          }
         ]
       },
       {
@@ -111,9 +166,17 @@
           "Implemented secure JWT-based authentication, email OTP verification, and automated asset status updates with node-schedule.",
           "Used Cloudinary and Multer for image uploads."
         ],
-        "tags": ["Flutter", "Node.js", "MySQL", "JWT"],
+        "tags": [
+          "Flutter",
+          "Node.js",
+          "MySQL",
+          "JWT"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon/Asset-borrowing-system-mobile/blob/main/README.md" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/NyiWaiYanHtoon/Asset-borrowing-system-mobile/blob/main/README.md"
+          }
         ]
       },
       {
@@ -128,15 +191,26 @@
         "bullets": [
           "Developed a salary prediction model using ANN, enhanced with bagging and PCA for improved performance and robustness."
         ],
-        "tags": ["Python", "ANN", "PCA", "Docker", "Scikit-learn"],
+        "tags": [
+          "Python",
+          "ANN",
+          "PCA",
+          "Docker",
+          "Scikit-learn"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon/salary-prediction-model.git" },
-          { "label": "Slides", "href": "https://docs.google.com/presentation/d/111fW_aGrVDMYpFLJrIQ0OEgwRPXkohCV5xM88igpShs/edit?usp=sharing" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/NyiWaiYanHtoon/salary-prediction-model.git"
+          },
+          {
+            "label": "Slides",
+            "href": "https://docs.google.com/presentation/d/111fW_aGrVDMYpFLJrIQ0OEgwRPXkohCV5xM88igpShs/edit?usp=sharing"
+          }
         ]
       }
     ]
   },
-
   "experience": {
     "heading": "Building things.",
     "headingAccent": "Shipping things.",
@@ -175,43 +249,60 @@
       }
     ]
   },
-
   "about": {
-    "heading": "Beyond the",
-    "headingAccent": "codes.",
+    "heading": "Outside the",
+    "headingAccent": "experiments. ",
     "bio": [
-      "My full name is Nyi Wai Yan Tun, but you can call me Romand.",
-      "I like the feeling when something clicks into place. I like systems that make sense, code that's easy to read, and teams that communicate well.",
-      "Outside of work, I'm probably tinkering with a side project, playing too much chess, or trying to understand how something works just because I'm curious."
+      "I'm May Htet Htet Khine, usually just called May. I come from a computer engineering background and currently work on data-driven manufacturing and machine learning research.",
+      "I like building systems that are reliable, understandable, and grounded in real constraints, not just models that look good in ideal conditions. Most of my work revolves around experimentation, optimization, and reducing variability in complex processes.",
+      "Outside of research, I enjoy picking up small practical skills, watching long-form commentary, and disappearing into engineering and technology rabbit holes."
     ],
     "photo": "/images/my-photo.png",
     "facts": [
-      { "label": "Based In",          "value": "Bangkok, Thailand — open to relocation" },
-      { "label": "Languages",         "value": "Burmese (native), Thai (basic), English (fluent)" },
-      { "label": "Education",         "value": "B.E. Computer Engineering, Mae Fah Luang University" },
-      { "label": "Off The Clock",     "value": "Playing chess, tinkering with side projects, watching edutainment videos" },
-      { "label": "Current Interest", "value": "How LLMs are changing the way software gets built" },
-      { "label": "Also Me",           "value": "The harder the problem, the sweeter the moment when I finally solve it" }
+      {
+        "label": "Based In",
+        "value": "Thailand, but open to global relocation"
+      },
+      {
+        "label": "Languages",
+        "value": "Burmese (native),  English (TOEIC 965), Thai (conversational)"
+      },
+      {
+        "label": "Education",
+        "value": "B.Eng. (First Honor) Computer Engineering, Mae Fah Luang University"
+      },
+      {
+        "label": "Background Noise",
+        "value": "Video essays playing while my models train"
+      },
+      {
+        "label": "Current Interests",
+        "value": "Web Development, Management, Self-improvement"
+      }
     ],
     "colleagueTags": [
-      "Easy to work with",
-      "Asks good questions",
-      "Gets things done",
-      "Passionante",
-      "Never gives up",
-      "Always learning",
-      "Overthinks sometimes"
+      "Dependable",
+      "Solution-oriented",
+      "Actively applies feedbacks",
+      "Curious",
+      "Precise",
+      "เมย์ พูดไทยเก่งมาก!"
     ]
   },
-
   "connect": {
-    "heading": "Let's build",
-    "headingAccent": "something together.",
-    "subheading": "Got a project in mind, want to collaborate, or just say hi? My inbox is always open.",
-    "ctaLabel": "Say Hello →",
+    "heading": "I'm looking for",
+    "headingAccent": "my next challenge.",
+    "subheading": "Whether it's data science, applied ML, research engineering, or an interesting technical problem, I'm always open to conversations and collaborations.",
+    "ctaLabel": " Start Chatting → ",
     "socialLinks": [
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/may-htet-htet-khine-7076521a5/" },
-      { "label": "GitHub",   "href": "https://github.com/mayhtethtetkhine" }
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/may-htet-htet-khine-7076521a5/"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/mayhtethtetkhine"
+      }
     ]
   }
 }

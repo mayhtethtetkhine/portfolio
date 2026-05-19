@@ -95,7 +95,7 @@ const SelectedWorkSection = ({ data }) => {
 
               <div className="flex flex-wrap gap-2 mt-1">
                 {tags.map((tag) => (
-                  <span key={tag} className="px-3 py-1 rounded-full border border-text/20 text-xs text-muted tracking-wide uppercase">
+                  <span key={tag} className="px-3 py-1 rounded-full border border-text/20 text-xs text-muted tracking-wide hover:border-primary hover:text-primary cursor-default uppercase">
                     {tag}
                   </span>
                 ))}

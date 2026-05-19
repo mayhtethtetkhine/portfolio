@@ -41,7 +41,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-background text-text min-h-screen font-montserrat overflow-x-hidden">
+    <div className="bg-background text-text min-h-screen font-montserrat">
 
       {/* ── NAVBAR ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 backdrop-blur-md bg-background/60 border-b border-text/5">

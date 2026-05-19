@@ -9,7 +9,7 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) => {
     <div className="flex items-center justify-between">
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="tracking-[0.25em] text-sm text-text cursor-pointer transition-opacity uppercase font-mono"
+        className="tracking-[0.25em] text-sm font-bold text-text cursor-pointer transition-opacity uppercase font-mono"
       >
         May<span className="text-primary">.</span>
       </button>
