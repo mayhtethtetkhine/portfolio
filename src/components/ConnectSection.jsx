@@ -15,7 +15,7 @@ const ConnectSection = ({ data, email }) => {
 
   return (
     <Section id="connect" title="Let's Connect">
-      <div className="mb-12 mx-8 md:mx-58">
+      <div className="mb-12 mx-8 md:mx-30">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
           {heading}
           <br />
@@ -24,11 +24,11 @@ const ConnectSection = ({ data, email }) => {
         <p className="text-muted max-w-lg leading-relaxed">{subheading}</p>
       </div>
 
-      <div className="flex flex-col items-start gap-6 mx-8 md:mx-58">
+      <div className="flex flex-col items-start gap-6 mx-8 md:mx-30">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <a
             href={`https://mail.google.com/mail/?view=cm&to=${email}`}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-background font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-8 md:min-w-43 py-4 rounded-full bg-primary text-background font-semibold text-sm hover:opacity-90 transition-opacity"
             target="_blank"
             rel="noopener noreferrer"
           >
