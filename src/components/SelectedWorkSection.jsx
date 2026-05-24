@@ -2,13 +2,16 @@ import { useState, useEffect, useRef } from "react";
 import Section from "./Section";
 import { ArrowUpRight } from "lucide-react";
 
-const SelectedWorkSection = ({ data, tinytitle }) => {
+const SelectedWorkSection = ({ data, tinytitle }) =>
+{
   const { heading, headingAccent, subheading, projects } = data;
   const [activeProject, setActiveProject] = useState(projects[0].id);
   const projectRefs = useRef({});
 
-  useEffect(() => {
-    const observers = projects.map(({ id }) => {
+  useEffect(() =>
+  {
+    const observers = projects.map(({ id }) =>
+    {
       const el = projectRefs.current[id];
       if (!el) return null;
       const obs = new IntersectionObserver(
@@ -21,11 +24,29 @@ const SelectedWorkSection = ({ data, tinytitle }) => {
     return () => observers.forEach((o) => o?.disconnect());
   }, [projects]);
 
+  // const scrollToProject = (id) =>
+  //   projectRefs.current[id]?.scrollIntoView({ behavior: "smooth" });
+
   const scrollToProject = (id) =>
-    projectRefs.current[id]?.scrollIntoView({ behavior: "smooth" });
+  {
+    const el = projectRefs.current[id];
+    if (!el) return;
+
+    const navbarOffset = 140;
+
+    const y =
+      el.getBoundingClientRect().top +
+      window.pageYOffset -
+      navbarOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <Section id="selected-work" title= {tinytitle}>
+    <Section id="selected-work" title={tinytitle}>
 
       {/* Header */}
       <div className="mb-16 mx-8 md:mx-58">
@@ -38,19 +59,18 @@ const SelectedWorkSection = ({ data, tinytitle }) => {
 
       {/* Sticky project nav */}
       <div className="hidden md:sticky md:flex top-20 z-20 flex justify-center mb-20">
-        <div className="flex items-center gap-1 bg-background/80 border border-text/10 rounded-full px-2 py-2 backdrop-blur-md">
+        <div className="flex items-center gap-1 bg-background/60 border border-primary/5 rounded-full px-2 py-3 backdrop-blur-md shadow-[0_10px_35px_rgba(88,33,128,0.12)]">
           {projects.map(({ id, name }) => (
-            <button
-              key={id}
-              onClick={() => scrollToProject(id)}
-              className={`px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 ${
-                activeProject === id
-                  ? "bg-primary text-background font-semibold"
-                  : "text-muted hover:text-text"
+          <button
+            key={id}
+            onClick={() => scrollToProject(id)}
+            className={`px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 ${activeProject === id
+                ? "bg-primary text-background font-semibold"
+                : "text-muted hover:text-text"
               }`}
-            >
-              {name}
-            </button>
+          >
+            {name}
+          </button>
           ))}
         </div>
       </div>

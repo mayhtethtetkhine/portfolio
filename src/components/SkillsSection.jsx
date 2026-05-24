@@ -6,11 +6,12 @@ const TAG_ROTATIONS = [
   "-rotate-5", "rotate-4", "-rotate-2", "rotate-2",
 ];
 
-const SkillsSection = ({ data , tinytitle}) => {
-  const { heading, headingAccent, subheading, items  } = data;
+const SkillsSection = ({ data, tinytitle }) =>
+{
+  const { heading, headingAccent, subheading, items } = data;
 
   return (
-    <Section id="what-i-do" title= {tinytitle}>
+    <Section id="what-i-do" title={tinytitle}>
       <div className="mb-16 px-8 md:px-30">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
           {heading}<br />
@@ -22,17 +23,12 @@ const SkillsSection = ({ data , tinytitle}) => {
       <div className="flex flex-col">
         {items.map(({ title, description, tags }) => (
           <div key={title} className="py-14 border-t border-text/10">
-            <h3 className="text-4xl md:text-6xl font-bold mb-10">{title}</h3>
-            <div className="grid md:grid-cols-2 gap-10 items-start">
-              <p className="text-muted leading-relaxed">{description}</p>
+            <h3 className="text-3xl md:text-5xl font-bold mb-10">{title}</h3>
+            <div className="grid gap-10 items-start">
+              {/* <p className="text-muted leading-relaxed">{description}</p> */}
               <div className="flex flex-wrap gap-4">
-                {tags.map((tag, i) => (
-                  <Tag
-                    key={tag}
-                    label={tag}
-                    rotation={TAG_ROTATIONS[i % TAG_ROTATIONS.length]}
-                    reverse={i % 2 === 0}
-                  />
+                {tags.map((tag) => (
+                  <Tag key={tag} label={tag} />
                 ))}
               </div>
             </div>

@@ -54,7 +54,7 @@
       },
       {
         "title": "Databases",
-        "description": "I work with both relational and non-relational databases depending on what the project needs. PostgreSQL and MySQL for structured data, MongoDB for flexibility, Redis for caching and queues, and Supabase and Firebase for projects that need a backend fast.",
+        "description": "",
         "tags": [
           "PostgreSQL",
           "MySQL",
@@ -188,7 +188,7 @@
         "id": "churn",
         "name": "Churn Analysis",
         "subtitle": "Rapid Miner",
-        "org": "Personal Project",
+        "org": "Business Data Analytics",
         "period": "2023",
         "image": "/images/asset-borrowing-cover.png",
         "color": "bg-primary/5",
@@ -202,7 +202,6 @@
           "RapidMiner",
           "Churn Analysis",
           "Classification",
-          "Business Analytics",
           "Imbalanced Data"
         ],
         "links": [
@@ -216,7 +215,7 @@
         "id": "salary",
         "name": "Salary Classification",
         "subtitle": "ANN Model",
-        "org": "Academic Project",
+        "org": "AI/ML Project",
         "period": "2022",
         "image": "/images/salary-prediction-cover.png",
         "color": "bg-text/5",

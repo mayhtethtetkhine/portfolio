@@ -11,7 +11,7 @@ import data from "./data.json";
 const NAV_LINKS = [
   { label: "Skills",      href: "what-i-do"      },
   { label: "Projects",  href: "selected-work"  },
-  { label: "Experience",     href: "experience"     },
+  { label: "Experience",  href: "experience"     },
   { label: "About me", href: "meet-you"     },
   { label: "Contact",  href: "connect"        },
 ];
@@ -44,7 +44,7 @@ export default function App() {
     <div className="bg-background text-text min-h-screen font-archivo">
 
       {/* ── NAVBAR ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 backdrop-blur-md bg-background/60 border-b border-text/5">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 backdrop-blur-md bg-background/60 border-b border-text/5 shadow-[0_12px_40px_rgba(166,140,255,0.13)]">
         <Navbar
           nav_links={NAV_LINKS}
           activeLink={active}

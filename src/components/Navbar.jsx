@@ -2,11 +2,12 @@ import { useState } from "react";
 import { X, Menu } from "lucide-react";
 import ReactDOM from "react-dom";
 
-const Navbar = ({ nav_links, activeLink, onLinkClick }) => {
+const Navbar = ({ nav_links, activeLink, onLinkClick }) =>
+{
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between ">
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="tracking-[0.25em] text-sm font-bold text-text cursor-pointer transition-opacity uppercase font-mono"
@@ -14,16 +15,24 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) => {
         May<span className="text-primary">.</span>
       </button>
 
+
+
       {/* Desktop links */}
       <ul className="hidden md:flex items-center gap-8">
         {nav_links.map(({ label, href }) => (
           <li key={href}>
             <button
               onClick={() => onLinkClick(href)}
-              className={`uppercase text-xs tracking-[0.12em] transition-colors duration-200 font-mono cursor-pointer hover:text-text hover:font-semibold ${activeLink === href ? "text-text font-semibold" : "text-muted font-normal"}`}
+              className={`uppercase text-xs tracking-[0.14em] transition-all duration-300 font-mono cursor-pointer px-4 py-2 rounded-full border ${activeLink === href
+                  ? "border-primary/40 bg-primary/8 text-primary font-bold backdrop-blur-md shadow-[0_6px_20px_rgba(88,33,128,0.14)]"
+                  : "border-transparent text-muted hover:text-text hover:bg-primary/7 hover:shadow-[0_4px_16px_rgba(88,33,128,0.08)]"
+                }`}
             >
               {label}
             </button>
+
+
+
           </li>
         ))}
       </ul>
@@ -50,7 +59,8 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) => {
             {nav_links.map(({ label, href }) => (
               <button
                 key={href}
-                onClick={() => {
+                onClick={() =>
+                {
                   onLinkClick(href);
                   setMenuOpen(false);
                 }}
