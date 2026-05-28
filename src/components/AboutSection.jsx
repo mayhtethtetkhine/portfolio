@@ -26,7 +26,7 @@ const AboutSection = ({ data, tinytitle }) =>
             )}
           </div>
           {bio.map((paragraph, i) => (
-            <p key={i} className="text-muted leading-relaxed text-sm md:text-base">{paragraph}</p>
+            <p key={i} className="text-muted leading-relaxed text-justify text-sm md:text-base">{paragraph}</p>
           ))}
         </div>
 

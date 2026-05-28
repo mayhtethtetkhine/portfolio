@@ -1,4 +1,4 @@
-const ExperienceCard = ({ period, position, org, description, bgColor, textColor, borderColor, logo, type }) =>
+const ExperienceCard = ({ period, position, org, description, bgColor, textColor, logo, type }) =>
 {
   return (
     <div
@@ -39,7 +39,7 @@ const ExperienceCard = ({ period, position, org, description, bgColor, textColor
       <div className="flex-1" />
 
       {/* Content — always starts at the same vertical position */}
-      <div style={{ color: textColor }} className="pr-30">
+      <div style={{ color: textColor }} className="text-justify">
         <p className="text-sm tracking-wide mb-4">{period}</p>
         <h3 className="text-2xl font-bold leading-tight mb-4">
           {position}

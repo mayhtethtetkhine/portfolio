@@ -215,15 +215,14 @@
     "heading": "Professional & Research",
     "headingAccent": "Experience",
     "headingSuffix": "",
-    "subheading": "I've worked across universities, banks, and startups — writing code, supporting teams, and figuring out how real software gets built and shipped.",
+    "subheading": "I've been working across industry and research roles applying machine learning, probabilistic modeling, and data analytics to solve complex engineering and manufacturing problems.",
     "items": [
       {
         "period": "Aug 2025 - Present",
         "position": "Data Scientist",
         "org": "Seagate Technology TH",
-        "description": "Worked in an Agile team handling tickets via Jira across the full dev lifecycle. Delivered features, bug fixes, and customer-driven hotfixes to production. Built LLM-powered pipelines and microservice workflows for scalable data processing.",
+        "description": "Developing data-driven optimization and predictive modeling solutions for HDD manufacturing processes, applying machine learning, statistical modeling, and foundation models to analyze high-dimensional engineering data, reduce process variability, and improve manufacturing robustness and decision-making.",
         "bgColor": "#eff7eb",
-        "borderColor": "#b7a7b9",
         "textColor": "#0c0c0c",
         "logo": "/images/seagate-logo.png",
         "type": "Contract"
@@ -232,9 +231,8 @@
         "period": "Jan 2025 - Apr 2025",
         "position": "Data Scientist Intern",
         "org": "Seagate Technology TH",
-        "description": "Supported students in Mobile and Web development labs, offering hands-on guidance and strengthening problem-solving and communication skills through diverse one-on-one interactions.",
+        "description": "Developed Bayesian machine learning models using PyMC for drive failure root cause analysis, improving diagnostic reliability by 17% through probabilistic inference and engineering data analytics.",
         "bgColor": "#f3faf0",
-        "borderColor": "#b7a7b9",
         "textColor": "#0c0c0c",
         "logo": "/images/seagate-logo.png",
         "type": "Internship"
@@ -243,9 +241,8 @@
         "period": "May 2021 - Jul 2022",
         "position": "Research Assistant",
         "org": "Mae Fah Luang University",
-        "description": "Delivered end-user support for software, hardware, and network issues including system setup, installation, and maintenance. Collaborated with developers and IT teams to troubleshoot problems remotely and on-site.",
+        "description": "Developed machine learning and Bayesian models for nonlinear state estimation and prognostics, applying time-series analysis and statistical modeling to engineering research projects and peer-reviewed publications.",
         "bgColor": "#ffebeb",
-        "borderColor": "#b7a7b9",
         "textColor": "#0c0c0c",
         "logo": "/images/mfu-logo.png",
         "type": "Part-time"
